@@ -10,5 +10,6 @@
 	<h3>Relatório de usuários</h3>
 	<a href="ServiletDownloadRelatorio?tipoExport=pdf">Gerar PDF</a>
 	<a href="ServiletDownloadRelatorio?tipoExport=xls">Gerar Excel</a>
+	<a href="enviarEmail?tipoExport=pdf">Enviar por email</a>
 </body>
 </html>
