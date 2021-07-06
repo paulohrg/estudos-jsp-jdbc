@@ -37,7 +37,7 @@ public class UploadFile extends HttpServlet {
 			
 			if(acao.equalsIgnoreCase("carregar")) {
 
-				RequestDispatcher retornoTelaUpload = request.getRequestDispatcher("/principal/estudos/upload-arquivo.jsp");
+				RequestDispatcher retornoTelaUpload = request.getRequestDispatcher("upload-arquivo.jsp");
 				request.setAttribute("listaArquivosUsuario", arquivoDao.listarArquivosDoUsuario(idUser));
 				retornoTelaUpload.forward(request, response);
 			}else if(acao.equalsIgnoreCase("download")){
