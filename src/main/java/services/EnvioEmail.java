@@ -29,7 +29,7 @@ import model.Userestudo;
 
 public class EnvioEmail {
 	private String username = "paulotestesistemas@gmail.com";
-	private String senha = "testesistema123";
+	private String senha = "";
 	
 	private String destinatarios = "";
 	private String nomeRemetente = "";
@@ -48,10 +48,10 @@ public class EnvioEmail {
 		Properties properties =  new Properties();
 		
 		properties.put("mail.smtp.ssl.trust", "*");
-		properties.put("mail.smtp.auth", "true"); //autorizaÁ„o.
-		properties.put("mail.smtp.starttls", "true");//autenticaÁ„o.
+		properties.put("mail.smtp.auth", "true"); //autoriza√ß√£o.
+		properties.put("mail.smtp.starttls", "true");//autentica√ß√£o.
 		properties.put("mail.smtp.host", "smtp.gmail.com");//servidor gmail google.
-		properties.put("mail.smtp.port", "465");//porta padr„o do servidor gmail.
+		properties.put("mail.smtp.port", "465");//porta padr√£o do servidor gmail.
 		properties.put("mail.smtp.socketFactory.port", "465");//especifica a porta a ser conectada pelo socket.
 		properties.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory"); //classe socket de conexao ao SMTP.
 		
@@ -80,10 +80,10 @@ public class EnvioEmail {
 		Properties properties =  new Properties();
 		
 		properties.put("mail.smtp.ssl.trust", "*");
-		properties.put("mail.smtp.auth", "true"); //autorizaÁ„o.
-		properties.put("mail.smtp.starttls", "true");//autenticaÁ„o.
+		properties.put("mail.smtp.auth", "true"); //autoriza√ß√£o.
+		properties.put("mail.smtp.starttls", "true");//autentica√ß√£o.
 		properties.put("mail.smtp.host", "smtp.gmail.com");//servidor gmail google.
-		properties.put("mail.smtp.port", "465");//porta padr„o do servidor gmail.
+		properties.put("mail.smtp.port", "465");//porta padr√£o do servidor gmail.
 		properties.put("mail.smtp.socketFactory.port", "465");//especifica a porta a ser conectada pelo socket.
 		properties.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory"); //classe socket de conexao ao SMTP.
 		
